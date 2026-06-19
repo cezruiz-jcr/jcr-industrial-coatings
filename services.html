@@ -4,128 +4,147 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services | JCR Industrial Coatings</title>
-  <meta name="description" content="JCR Industrial Coatings provides abrasive blasting, full containment systems, lead abatement, structural steel repair, and high-performance coating application for municipal water infrastructure.">
-  <link rel="icon" href="/assets/images/logo.png" type="image/png">
+  <meta name="description" content="JCR Industrial Coatings provides abrasive blasting, containment systems, lead abatement, structural repair, coating application, and interior lining services.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/jcr-logo.webp" type="image/webp">
 </head>
 <body>
 
-  <div id="nav-placeholder"></div>
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/images/jcr-logo.webp" alt="JCR Industrial Coatings"></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="safety.html">Safety</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-navy">Get a Quote</a></div>
+    <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
 
-  <!-- PAGE HEADER -->
-  <div class="page-header">
-    <div class="container">
-      <span class="section-label">What We Do</span>
-      <h1>Core Services</h1>
-      <p>Full-scope industrial coatings execution for municipal water and wastewater infrastructure. Every service is delivered to SSPC surface preparation standards with AMPP/NACE certified oversight.</p>
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <span class="section-label">What We Do</span>
+  <h1>Core Services</h1>
+  <p>Full-scope industrial coatings execution for municipal water and wastewater infrastructure.</p>
+</section>
+
+<!-- SERVICES GRID -->
+<section class="section">
+  <div class="container">
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 10V3L4 14h7v7l9-11h-7z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Abrasive Blasting</h3>
+        <p>SSPC SP-6, SP-10, and SP-5 surface preparation using recyclable steel grit and garnet media. Full containment with negative air pressure systems for zero-emission operations.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <h3>Full Containment Systems</h3>
+        <p>Class 1A, 2A, and 3 containment systems designed for elevated and ground storage tanks. Engineered rigging, suspended scaffolding, and environmental compliance documentation.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Lead Abatement</h3>
+        <p>EPA RRP certified lead paint removal with full worker protection protocols. Air monitoring, soil sampling, and proper disposal documentation per 40 CFR Part 745.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Structural Steel Repair</h3>
+        <p>Weld repair, plate replacement, and structural reinforcement for deteriorated tank components. AWS D1.1 certified welders with PE-stamped repair drawings when required.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Coating Application</h3>
+        <p>High-performance epoxy, polyurethane, and fluoropolymer coating systems applied per manufacturer specifications. DFT verification, holiday testing, and full QA/QC documentation.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Interior Tank Lining</h3>
+        <p>NSF/ANSI 61 certified potable water lining systems. Confined space entry protocols, ventilation engineering, and post-application disinfection coordination.</p>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- SERVICES GRID -->
-  <section class="section">
-    <div class="container">
-      <div class="services-grid">
-
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-          </div>
-          <h3>Abrasive Blasting</h3>
-          <p>Dry and wet abrasive blasting executed to SSPC-SP surface preparation standards (SP-6, SP-10, SP-5). Proper anchor profile for coating adhesion and long-term performance.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Full Containment Systems</h3>
-          <p>Engineered containment structures for elevated and ground storage tanks. Designed to capture blast media, prevent environmental release, and comply with lead abatement and EPA requirements.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Lead Abatement</h3>
-          <p>Hazardous material handling and lead paint removal on aging municipal infrastructure. Executed in compliance with EPA RRP rules, OSHA 1926.62, and state-specific lead abatement regulations.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Structural Steel Repair</h3>
-          <p>Weld repairs, joint sealing, and steel rehabilitation executed under current OSHA and AWS standards. Sikaflex joint sealing and holiday testing included in all applicable scopes.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Coating System Application</h3>
-          <p>Application of high-performance epoxy, urethane, and plural component coating systems specified for potable water contact and industrial environments. Interior and exterior application capability.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Interior Wet &amp; Dry Lining</h3>
-          <p>Interior tank lining for potable water storage — wet and dry abrasive blasting, NSF 61-compliant coating systems, holiday testing, and final disinfection per AWWA C652 standards.</p>
-        </div>
-
+<!-- NAICS CODES -->
+<section class="section section-light">
+  <div class="container" style="text-align:center;">
+    <span class="section-label">Government Contracting</span>
+    <h2 class="section-title">NAICS Codes</h2>
+    <div class="client-types" style="margin-top:1.5rem;">
+      <span class="client-chip">238320 — Painting &amp; Wall Covering</span>
+      <span class="client-chip">562910 — Environmental Remediation</span>
+      <span class="client-chip">238190 — Other Foundation Work</span>
+      <span class="client-chip">238990 — Sandblasting</span>
+      <span class="client-chip">237110 — Water &amp; Sewer Line Construction</span>
+    </div>
+    <div style="display:flex;gap:2.5rem;justify-content:center;margin-top:2rem;flex-wrap:wrap;">
+      <div style="text-align:center;">
+        <div style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-400);">UEI Number</div>
+        <div style="font-weight:600;color:var(--navy);margin-top:0.25rem;">FBJ6JAF9R1H4</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-400);">CAGE Code</div>
+        <div style="font-weight:600;color:var(--navy);margin-top:0.25rem;">5XF40</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- NAICS CODES -->
-  <section class="section section-light">
-    <div class="container">
-      <span class="section-label">Classification</span>
-      <h2 class="section-title">NAICS Codes &amp; Identifiers</h2>
-      <div class="divider"></div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:1rem;">
-        <div style="background:var(--white);padding:1.5rem;border-left:4px solid var(--blue);">
-          <div style="font-family:var(--font-head);font-size:1.4rem;font-weight:700;color:var(--navy);">562910</div>
-          <div style="color:var(--gray);font-size:0.9rem;margin-top:0.25rem;">Lead Abatement</div>
-        </div>
-        <div style="background:var(--white);padding:1.5rem;border-left:4px solid var(--blue);">
-          <div style="font-family:var(--font-head);font-size:1.4rem;font-weight:700;color:var(--navy);">238320</div>
-          <div style="color:var(--gray);font-size:0.9rem;margin-top:0.25rem;">Protective Paint and Coatings</div>
-        </div>
-        <div style="background:var(--white);padding:1.5rem;border-left:4px solid var(--blue);">
-          <div style="font-family:var(--font-head);font-size:1.4rem;font-weight:700;color:var(--navy);">238190</div>
-          <div style="color:var(--gray);font-size:0.9rem;margin-top:0.25rem;">Welding</div>
-        </div>
-        <div style="background:var(--white);padding:1.5rem;border-left:4px solid var(--blue);">
-          <div style="font-family:var(--font-head);font-size:1.4rem;font-weight:700;color:var(--navy);">238990</div>
-          <div style="color:var(--gray);font-size:0.9rem;margin-top:0.25rem;">Sandblasting</div>
-        </div>
-      </div>
-      <div style="display:flex;gap:2rem;margin-top:2rem;flex-wrap:wrap;">
-        <div>
-          <div style="font-family:var(--font-head);font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);">UEI Number</div>
-          <div style="font-weight:600;color:var(--navy);margin-top:0.2rem;">FBJ6JAF9R1H4</div>
-        </div>
-        <div>
-          <div style="font-family:var(--font-head);font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);">CAGE Code</div>
-          <div style="font-weight:600;color:var(--navy);margin-top:0.2rem;">5XF40</div>
-        </div>
-      </div>
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Need a Scope-Specific Proposal?</h2>
+  <p>Send us your specs and we will return a detailed proposal within 48 hours.</p>
+  <a href="contact.html" class="btn btn-gold">Request a Proposal</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/images/jcr-logo.webp" alt="JCR Industrial Coatings">
+      <p>Full-service industrial coatings contractor protecting water infrastructure since 1997.</p>
     </div>
-  </section>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+19378567944">(937) 856-7944</a></li>
+        <li><a href="mailto:julio.ruiz@jcrconstructioninc.com">julio.ruiz@jcrconstructioninc.com</a></li>
+        <li>Tipp City, OH 45371</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 JCR Industrial Coatings Inc. All rights reserved.</p>
+    <div class="footer-ids">
+      <span>UEI: FBJ6JAF9R1H4</span>
+      <span>CAGE: 5XF40</span>
+    </div>
+  </div>
+</footer>
 
-  <!-- CTA -->
-  <section style="background:var(--navy);padding:3.5rem 2rem;text-align:center;">
-    <h2 style="color:var(--white);margin-bottom:0.75rem;">Have a Project That Fits Our Scope?</h2>
-    <p style="color:rgba(255,255,255,0.65);max-width:520px;margin:0 auto 1.75rem;">We work as a specialty subcontractor on municipal water infrastructure projects. Contact us to discuss your scope and request our prequalification packet.</p>
-    <a href="/contact.html" class="btn btn-gold">Contact Us</a>
-  </section>
-
-  <div id="footer-placeholder"></div>
-  <script src="/assets/js/nav.js"></script>
+<script>
+window.addEventListener('scroll', () => {
+  document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 10);
+});
+</script>
 </body>
 </html>

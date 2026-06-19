@@ -4,179 +4,198 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | JCR Industrial Coatings</title>
-  <meta name="description" content="JCR Industrial Coatings past performance — elevated water towers, ground storage tanks, and municipal water infrastructure rehabilitation across Ohio and the Midwest.">
-  <link rel="icon" href="/assets/images/logo.png" type="image/png">
+  <meta name="description" content="View JCR Industrial Coatings project portfolio including water tower rehabilitation, tank recoating, and industrial painting projects across the Midwest.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/jcr-logo.webp" type="image/webp">
 </head>
 <body>
 
-  <div id="nav-placeholder"></div>
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/images/jcr-logo.webp" alt="JCR Industrial Coatings"></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="safety.html">Safety</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-navy">Get a Quote</a></div>
+    <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
 
-  <!-- PAGE HEADER -->
-  <div class="page-header">
-    <div class="container">
-      <span class="section-label">Past Performance</span>
-      <h1>Project Portfolio</h1>
-      <p>Elevated towers, ground storage tanks, and wastewater structures across Ohio and the Midwest. Every project delivered to specification, on schedule, with full documentation.</p>
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <span class="section-label">Past Performance</span>
+  <h1>Project Portfolio</h1>
+  <p>Elevated towers, ground storage tanks, and wastewater structures across Ohio and the Midwest.</p>
+</section>
+
+<!-- PROJECTS LIST -->
+<section class="section">
+  <div class="container">
+
+    <!-- Project 1 -->
+    <div class="project-detail">
+      <div class="project-detail-img">
+        <img src="assets/images/tank-blue.jpg" alt="Alma MI Water Treatment Plant">
+      </div>
+      <div class="project-detail-info">
+        <span class="project-tag">In Progress — 2026</span>
+        <h2>Alma, MI — Water Treatment Plant</h2>
+        <div class="project-meta">
+          <span><strong>Client:</strong> LC United Painting</span>
+          <span><strong>Tank:</strong> 500K Gal. Toroellipse</span>
+        </div>
+        <ul>
+          <li>Full mobilization, rigging, and engineered containment system</li>
+          <li>Structural welding and steel repairs</li>
+          <li>Exterior abrasive blasting to SSPC-SP10 Near-White Metal</li>
+          <li>High-performance epoxy primer and urethane topcoat — exterior</li>
+          <li>Interior wet abrasive blasting and NSF 61-compliant lining</li>
+          <li>Derigging, roof coating, disinfection, and site restoration</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-detail">
+      <div class="project-detail-img">
+        <img src="assets/images/tower-hero.png" alt="American Water Gary IN">
+      </div>
+      <div class="project-detail-info">
+        <span class="project-tag completed">Completed</span>
+        <h2>American Water — Gary, IN</h2>
+        <div class="project-meta">
+          <span><strong>Client:</strong> American Water</span>
+          <span><strong>Tank:</strong> 2.5MG Elevated</span>
+        </div>
+        <ul>
+          <li>Full containment and lead abatement per EPA RRP</li>
+          <li>Structural steel repairs and joint sealing</li>
+          <li>Interior and exterior blast and coating system</li>
+          <li>Sikaflex joint sealing, holiday testing, final disinfection</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-detail">
+      <div class="project-detail-img">
+        <img src="assets/images/workers.jpg" alt="Wright-Patterson AFB">
+      </div>
+      <div class="project-detail-info">
+        <span class="project-tag completed">Completed</span>
+        <h2>Wright-Patterson AFB — Fairborn, OH</h2>
+        <div class="project-meta">
+          <span><strong>Client:</strong> American Water (Federal)</span>
+          <span><strong>Tank:</strong> 200K Gal. Spheroid</span>
+        </div>
+        <ul>
+          <li>Federal project — base access compliance and documentation</li>
+          <li>Full containment, structural repair, and joint sealing</li>
+          <li>Complete exterior and interior coating system installation</li>
+          <li>Roof coating, inspection, and final disinfection</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-detail">
+      <div class="project-detail-img">
+        <img src="assets/images/tank-blue.jpg" alt="Ashland OH Elevated Tower">
+      </div>
+      <div class="project-detail-info">
+        <span class="project-tag completed">Completed</span>
+        <h2>City of Ashland, OH — Fluted Column</h2>
+        <div class="project-meta">
+          <span><strong>Client:</strong> City of Ashland</span>
+          <span><strong>Tank:</strong> 500K Gal. Fluted Column Elevated</span>
+        </div>
+        <ul>
+          <li>Full exterior and interior blast and recoat</li>
+          <li>Structural steel repairs and welding</li>
+          <li>Epoxy zinc primer + intermediate + polyurethane topcoat</li>
+          <li>Sikaflex joint sealing, holiday testing, roof coating</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-detail">
+      <div class="project-detail-img">
+        <img src="assets/images/tower-hero.png" alt="Worthington Hills Columbus OH">
+      </div>
+      <div class="project-detail-info">
+        <span class="project-tag completed">Completed</span>
+        <h2>Worthington Hills — Columbus, OH</h2>
+        <div class="project-meta">
+          <span><strong>Client:</strong> AQUA Water</span>
+          <span><strong>Tank:</strong> 300K Gal. Ground Storage</span>
+        </div>
+        <ul>
+          <li>Full mobilization, rigging, and engineered containment</li>
+          <li>Interior and exterior abrasive blasting and coating</li>
+          <li>Structural steel repairs</li>
+          <li>Sikaflex joint sealing, holiday testing, site restoration</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Have a Similar Project?</h2>
+  <p>We provide detailed proposals for water tower and tank rehabilitation projects.</p>
+  <a href="contact.html" class="btn btn-gold">Request a Proposal</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/images/jcr-logo.webp" alt="JCR Industrial Coatings">
+      <p>Full-service industrial coatings contractor protecting water infrastructure since 1997.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+19378567944">(937) 856-7944</a></li>
+        <li><a href="mailto:julio.ruiz@jcrconstructioninc.com">julio.ruiz@jcrconstructioninc.com</a></li>
+        <li>Tipp City, OH 45371</li>
+      </ul>
     </div>
   </div>
-
-  <!-- PROJECT 1 — ALMA MI (IN PROGRESS) -->
-  <section class="project-detail">
-    <div class="container">
-      <div class="project-detail-grid">
-        <div class="project-img">
-          <img src="/assets/images/tank-blue.jpg" alt="Alma MI Water Treatment Plant Water Tower">
-        </div>
-        <div class="project-info">
-          <div class="project-meta">
-            <span class="meta-tag highlight">In Progress — 2026</span>
-            <span class="meta-tag">500K Gallon</span>
-            <span class="meta-tag">Toroellipse</span>
-          </div>
-          <h2>Alma, MI — Water Treatment Plant</h2>
-          <p class="client">LC United Painting &bull; Alma, Michigan</p>
-          <p>Full rehabilitation of a 500,000-gallon toroellipse elevated water storage tank for the City of Alma municipal water system. Scope includes full containment erection, abrasive blasting, structural repairs, and high-performance coating system application — interior and exterior.</p>
-          <ul class="scope-list">
-            <li>Full mobilization, rigging, and engineered containment system</li>
-            <li>Structural welding and steel repairs</li>
-            <li>Exterior abrasive blasting to SSPC-SP10 Near-White Metal</li>
-            <li>High-performance epoxy primer and urethane topcoat — exterior</li>
-            <li>Interior wet abrasive blasting and NSF 61-compliant lining</li>
-            <li>Derigging, roof coating, disinfection, and site restoration</li>
-          </ul>
-        </div>
-      </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 JCR Industrial Coatings Inc. All rights reserved.</p>
+    <div class="footer-ids">
+      <span>UEI: FBJ6JAF9R1H4</span>
+      <span>CAGE: 5XF40</span>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- PROJECT 2 — AMERICAN WATER GARY IN -->
-  <section class="project-detail" style="background:var(--light);">
-    <div class="container">
-      <div class="project-detail-grid reverse">
-        <div class="project-img">
-          <img src="/assets/images/project-1.jpg" alt="American Water Gary IN Elevated Tank" onerror="this.src='/assets/images/tower-hero.png'">
-        </div>
-        <div class="project-info">
-          <div class="project-meta">
-            <span class="meta-tag">Completed</span>
-            <span class="meta-tag">2.5M Gallon</span>
-            <span class="meta-tag">Elevated Tank</span>
-          </div>
-          <h2>American Water — Gary, IN</h2>
-          <p class="client">American Water &bull; Gary, Indiana</p>
-          <p>Rehabilitation of a 2.5-million-gallon elevated water storage tank for American Water's Gary, Indiana service territory. One of the largest single-tank scopes in JCR's portfolio — full containment, lead abatement, and complete interior and exterior coating system replacement.</p>
-          <ul class="scope-list">
-            <li>Full mobilization, rigging, and engineered containment</li>
-            <li>Lead abatement — existing coating removal per EPA RRP</li>
-            <li>Structural steel repairs and joint sealing</li>
-            <li>Interior abrasive blasting, priming, and coating system installation</li>
-            <li>Exterior surface preparation and protective coating application</li>
-            <li>Sikaflex joint sealing, holiday testing, final disinfection</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECT 3 — WRIGHT-PATTERSON AFB -->
-  <section class="project-detail">
-    <div class="container">
-      <div class="project-detail-grid">
-        <div class="project-img">
-          <img src="/assets/images/project-2.jpg" alt="Wright-Patterson AFB Spheroid Tank" onerror="this.src='/assets/images/tower-hero.png'">
-        </div>
-        <div class="project-info">
-          <div class="project-meta">
-            <span class="meta-tag">Completed</span>
-            <span class="meta-tag">200K Gallon</span>
-            <span class="meta-tag">Spheroid</span>
-            <span class="meta-tag">Federal</span>
-          </div>
-          <h2>Wright-Patterson AFB — Fairborn, OH</h2>
-          <p class="client">American Water (Federal Contract) &bull; Fairborn, Ohio</p>
-          <p>Rehabilitation of a 200,000-gallon spheroid elevated storage tank at Wright-Patterson Air Force Base. Federal project requiring strict documentation, base access compliance, and coordination with base facility management throughout the scope.</p>
-          <ul class="scope-list">
-            <li>Full mobilization, rigging, and containment — base access compliant</li>
-            <li>Structural steel repair and joint sealing</li>
-            <li>Complete exterior surface preparation and coating system installation</li>
-            <li>Interior dry and wet abrasive blasting and lining application</li>
-            <li>Roof coating, inspection, and final disinfection</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECT 4 — ASHLAND OH -->
-  <section class="project-detail" style="background:var(--light);">
-    <div class="container">
-      <div class="project-detail-grid reverse">
-        <div class="project-img">
-          <img src="/assets/images/tank-blue.jpg" alt="City of Ashland OH Fluted Column Tank">
-        </div>
-        <div class="project-info">
-          <div class="project-meta">
-            <span class="meta-tag">Completed</span>
-            <span class="meta-tag">500K Gallon</span>
-            <span class="meta-tag">Fluted Column</span>
-          </div>
-          <h2>City of Ashland, OH — Fluted Column</h2>
-          <p class="client">City of Ashland &bull; Ashland, Ohio</p>
-          <p>Full rehabilitation of a 500,000-gallon fluted column elevated water storage tank for the City of Ashland municipal water system. Scope included structural repairs, complete exterior and interior coating system replacement, and final disinfection.</p>
-          <ul class="scope-list">
-            <li>Full mobilization, rigging, and containment</li>
-            <li>Structural steel repairs and welding</li>
-            <li>Exterior abrasive blasting, priming, and coating system installation</li>
-            <li>Interior wet abrasive blasting and lining application</li>
-            <li>Dry interior surface preparation and coating</li>
-            <li>Sikaflex joint sealing, holiday testing, roof coating, final disinfection</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECT 5 — WORTHINGTON HILLS -->
-  <section class="project-detail">
-    <div class="container">
-      <div class="project-detail-grid">
-        <div class="project-img">
-          <img src="/assets/images/tower-hero.png" alt="Worthington Hills Columbus OH Ground Storage Tank">
-        </div>
-        <div class="project-info">
-          <div class="project-meta">
-            <span class="meta-tag">Completed</span>
-            <span class="meta-tag">300K Gallon</span>
-            <span class="meta-tag">Ground Storage</span>
-          </div>
-          <h2>Worthington Hills — Columbus, OH</h2>
-          <p class="client">AQUA Water &bull; Columbus, Ohio</p>
-          <p>Rehabilitation of a 300,000-gallon ground storage tank for AQUA Water in the Worthington Hills service area. Full interior and exterior scope including structural repairs, abrasive blasting, and coating system application.</p>
-          <ul class="scope-list">
-            <li>Full mobilization, rigging, and engineered containment</li>
-            <li>Structural steel repairs</li>
-            <li>Interior abrasive blasting, priming, and coating system installation</li>
-            <li>Exterior surface preparation and protective coating application</li>
-            <li>Sikaflex joint sealing and holiday testing</li>
-            <li>Final touch-up, tank disinfection, and site restoration</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section style="background:var(--gold);padding:3.5rem 2rem;text-align:center;">
-    <h2 style="color:var(--navy);margin-bottom:0.75rem;">Have a Project That Fits Our Profile?</h2>
-    <p style="color:var(--navy);opacity:0.75;max-width:520px;margin:0 auto 1.75rem;">We work as a specialty subcontractor on municipal water infrastructure projects throughout Ohio and the Midwest. Request our prequalification packet to get started.</p>
-    <a href="/contact.html" class="btn btn-navy">Request Prequalification Packet</a>
-  </section>
-
-  <div id="footer-placeholder"></div>
-  <script src="/assets/js/nav.js"></script>
+<script>
+window.addEventListener('scroll', () => {
+  document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 10);
+});
+</script>
 </body>
 </html>
