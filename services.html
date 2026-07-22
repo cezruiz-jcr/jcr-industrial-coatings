@@ -4,12 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services | JCR Industrial Coatings</title>
-  <meta name="description" content="JCR Industrial Coatings provides abrasive blasting, containment systems, lead abatement, structural repair, coating application, and interior lining services.">
+  <meta name="description" content="JCR Industrial Coatings provides abrasive blasting, containment systems, lead abatement, structural repair, coating application, interior lining, epoxy flooring, and consulting services.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/images/jcr-logo.webp" type="image/webp">
+  <style>
+    .epoxy-section {
+      background: #f8f9fa;
+      border-left: 4px solid var(--gold, #c8a84b);
+      padding: 2.5rem 2rem;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 2.5rem;
+    }
+    .epoxy-section .epoxy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      .epoxy-section .epoxy-grid { grid-template-columns: 1fr; }
+    }
+    .epoxy-section img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      max-height: 320px;
+    }
+    .new-badge {
+      display: inline-block;
+      background: var(--gold, #c8a84b);
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
 
@@ -33,49 +71,98 @@
 <section class="page-header">
   <span class="section-label">What We Do</span>
   <h1>Core Services</h1>
-  <p>Full-scope industrial coatings execution for municipal water and wastewater infrastructure.</p>
+  <p>Full-scope industrial coatings execution for municipal water infrastructure, industrial facilities, and commercial properties.</p>
 </section>
 
 <!-- SERVICES GRID -->
 <section class="section">
   <div class="container">
     <div class="services-grid">
+
       <div class="service-card">
         <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 10V3L4 14h7v7l9-11h-7z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <h3>Abrasive Blasting</h3>
         <p>SSPC SP-6, SP-10, and SP-5 surface preparation using recyclable steel grit and garnet media. Full containment with negative air pressure systems for zero-emission operations.</p>
       </div>
+
       <div class="service-card">
         <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></div>
         <h3>Full Containment Systems</h3>
         <p>Class 1A, 2A, and 3 containment systems designed for elevated and ground storage tanks. Engineered rigging, suspended scaffolding, and environmental compliance documentation.</p>
       </div>
+
       <div class="service-card">
         <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <h3>Lead Abatement</h3>
         <p>EPA RRP certified lead paint removal with full worker protection protocols. Air monitoring, soil sampling, and proper disposal documentation per 40 CFR Part 745.</p>
       </div>
+
       <div class="service-card">
         <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <h3>Structural Steel Repair</h3>
         <p>Weld repair, plate replacement, and structural reinforcement for deteriorated tank components. AWS D1.1 certified welders with PE-stamped repair drawings when required.</p>
       </div>
+
       <div class="service-card">
         <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Coating Application</h3>
+        <h3>Protective Coating Application</h3>
         <p>High-performance epoxy, polyurethane, and fluoropolymer coating systems applied per manufacturer specifications. DFT verification, holiday testing, and full QA/QC documentation.</p>
       </div>
+
       <div class="service-card">
         <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <h3>Interior Tank Lining</h3>
         <p>NSF/ANSI 61 certified potable water lining systems. Confined space entry protocols, ventilation engineering, and post-application disinfection coordination.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Water Tower Restoration &amp; Maintenance</h3>
+        <p>Full-cycle restoration and scheduled maintenance programs for public and private water towers. Inspection reports, condition assessments, and long-term maintenance planning to extend asset life and ensure AWWA compliance.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Consulting Services</h3>
+        <p>Independent project consulting for municipalities, engineering firms, and general contractors. Scope development, specification review, contractor qualification, and quality assurance oversight for coating and rehabilitation projects.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EPOXY FLOORING — NEW SERVICE -->
+<section class="section section-light">
+  <div class="container">
+    <div style="text-align:center; margin-bottom: 2rem;">
+      <span class="section-label">Expanding Our Capabilities</span>
+      <h2 class="section-title">Epoxy Flooring <span class="new-badge">New Service</span></h2>
+    </div>
+    <div class="epoxy-section">
+      <div class="epoxy-grid">
+        <div>
+          <h3 style="margin-top:0;">Industrial &amp; Commercial Epoxy Floor Coatings</h3>
+          <p>JCR Industrial Coatings is expanding its protective coatings expertise into industrial and commercial epoxy flooring. Leveraging the same high-performance coating knowledge and surface preparation standards we apply to water infrastructure, we deliver durable, seamless epoxy floor systems for warehouses, manufacturing facilities, garages, and commercial spaces.</p>
+          <p>Our epoxy flooring systems provide outstanding chemical resistance, impact durability, and a clean professional finish that is easy to maintain. Whether you need a standard solid-color system, a decorative flake floor, or a heavy-duty industrial coating, our team brings the same SSPC-trained surface prep and quality assurance to every floor project.</p>
+          <ul>
+            <li>Surface preparation — shot blasting, grinding, and profile assessment</li>
+            <li>Moisture vapor barrier and primer systems</li>
+            <li>Solid color, decorative flake, and quartz broadcast systems</li>
+            <li>Chemical-resistant and anti-slip topcoat options</li>
+            <li>Warehouse floor striping and line marking</li>
+          </ul>
+          <a href="contact.html" class="btn btn-blue" style="margin-top:1rem; display:inline-block;">Inquire About Epoxy Flooring</a>
+        </div>
+        <div>
+          <img src="assets/images/epoxy-flooring.jpg" alt="Industrial epoxy flooring installation by JCR Industrial Coatings">
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- NAICS CODES -->
-<section class="section section-light">
+<section class="section">
   <div class="container" style="text-align:center;">
     <span class="section-label">Government Contracting</span>
     <h2 class="section-title">NAICS Codes</h2>
@@ -94,6 +181,10 @@
       <div style="text-align:center;">
         <div style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-400);">CAGE Code</div>
         <div style="font-weight:600;color:var(--navy);margin-top:0.25rem;">5XF40</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-400);">DUNS</div>
+        <div style="font-weight:600;color:var(--navy);margin-top:0.25rem;">008418809</div>
       </div>
     </div>
   </div>
