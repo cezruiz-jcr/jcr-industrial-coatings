@@ -92,8 +92,17 @@
       width: 100%;
       height: 200px;
       object-fit: cover;
+      object-position: center top;
       display: block;
     }
+    /* Per-image centering overrides */
+    .pp-card img[src*="worthington"]   { object-position: center 30%; }
+    .pp-card img[src*="ashland"]        { object-position: center 20%; }
+    .pp-card img[src*="wright-patter"]  { object-position: center 20%; }
+    .pp-card img[src*="paw-menallen"]   { object-position: center 35%; }
+    .pp-card img[src*="project-tank-2"] { object-position: center 40%; }
+    .pp-card img[src*="citico"]         { object-position: center 30%; }
+    .pp-card img[src*="merrillville"]   { object-position: center 25%; }
     .pp-card-body { padding: 1.25rem 1.5rem 1.5rem; }
     .pp-card-body h3 { margin: 0.25rem 0 0.5rem; font-size: 1rem; color: #1e3a5f; }
     .pp-card-body .pp-subtitle { font-size: 0.8rem; font-weight: 600; color: #c8a84b; margin-bottom: 0.75rem; }
@@ -269,6 +278,22 @@
             <li>Abrasive blasting to SSPC-SP10 Near-White Metal</li>
             <li>High-performance coating system application</li>
             <li>Holiday testing and final disinfection</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Indiana American Water — Merrillville -->
+      <div class="pp-card">
+        <img src="assets/images/iaw-merrillville-spheroid.jpg" alt="Indiana American Water — Merrillville IN 2022 Spheroid Tank">
+        <div class="pp-card-body">
+          <span class="completed-badge">Completed 2022</span>
+          <h3>Indiana American Water<br>Merrillville, IN</h3>
+          <p class="pp-subtitle">1.5M Gal. Spheroid Tank</p>
+          <ul>
+            <li>Full mobilization, rigging, and containment</li>
+            <li>Abrasive blasting and surface preparation</li>
+            <li>High-performance epoxy and urethane coating system</li>
+            <li>Final inspection and site restoration</li>
           </ul>
         </div>
       </div>
