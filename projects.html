@@ -4,91 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | JCR Industrial Coatings</title>
-  <meta name="description" content="JCR Industrial Coatings has completed numerous projects with American Water, Aqua Water, Birmingham Water Works, and Del-Co Water.">
+  <meta name="description" content="JCR Industrial Coatings project portfolio — water tower and tank rehabilitation across Ohio and the Midwest.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/images/jcr-logo.webp" type="image/webp">
   <style>
-    .clients-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-      margin-top: 2.5rem;
-    }
-    .client-card {
-      background: #fff;
-      border: 1px solid #e5e7eb;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-      transition: box-shadow 0.2s;
-    }
-    .client-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
-    .client-card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
-    }
-    .client-card-body {
-      padding: 1.5rem;
-    }
-    .client-card-body h3 {
-      margin: 0 0 0.5rem;
-      font-size: 1.2rem;
-    }
-    .client-card-body p {
-      margin: 0;
-      color: #6b7280;
-      font-size: 0.9rem;
-      line-height: 1.6;
-    }
-    .project-tag {
-      display: inline-block;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 0.2rem 0.6rem;
-      border-radius: 4px;
-      background: #d1fae5;
-      color: #065f46;
-      margin-bottom: 0.6rem;
-    }
-    .current-project {
-      background: #fff7ed;
-      border: 2px solid #f59e0b;
+    .featured-project {
+      background: #f0f4ff;
+      border: 2px solid #1e3a5f;
       border-radius: 12px;
       padding: 2.5rem;
-      margin-bottom: 3.5rem;
+      margin-bottom: 4rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2.5rem;
       align-items: center;
     }
-    .current-project img {
+    .featured-project img {
       width: 100%;
       border-radius: 8px;
       object-fit: cover;
-      max-height: 320px;
+      max-height: 340px;
     }
-    .current-project h2 { margin-top: 0; }
-    .current-project .in-progress-badge {
-      display: inline-block;
-      background: #f59e0b;
-      color: #fff;
-      font-size: 0.7rem;
+    .featured-project h2 { margin-top: 0; color: #1e3a5f; }
+    .featured-project .fp-subtitle {
+      color: #c8a84b;
       font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.25rem 0.7rem;
-      border-radius: 4px;
-      margin-bottom: 0.75rem;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
     }
-    @media (max-width: 768px) {
-      .current-project { grid-template-columns: 1fr; }
+    .ideal-structures {
+      margin-top: 1.25rem;
+    }
+    .ideal-structures h4 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 0.4rem;
+    }
+    .ideal-structures ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: #374151;
+      line-height: 1.9;
+    }
+    .geo-capacity {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+    .geo-capacity div h4 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 0.4rem;
+    }
+    .geo-capacity div p { margin: 0; color: #374151; font-size: 0.9rem; line-height: 1.7; }
+
+    .past-perf-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 900px) { .past-perf-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) {
+      .past-perf-grid { grid-template-columns: 1fr; }
+      .featured-project { grid-template-columns: 1fr; }
+      .geo-capacity { grid-template-columns: 1fr; }
+    }
+
+    .pp-card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .pp-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .pp-card-body { padding: 1.25rem 1.5rem 1.5rem; }
+    .pp-card-body h3 { margin: 0.25rem 0 0.5rem; font-size: 1rem; color: #1e3a5f; }
+    .pp-card-body .pp-subtitle { font-size: 0.8rem; font-weight: 600; color: #c8a84b; margin-bottom: 0.75rem; }
+    .pp-card-body ul { margin: 0; padding-left: 1.1rem; font-size: 0.85rem; color: #374151; line-height: 1.8; }
+    .completed-badge {
+      display: inline-block;
+      background: #d1fae5;
+      color: #065f46;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      margin-bottom: 0.4rem;
     }
   </style>
 </head>
@@ -114,64 +134,106 @@
 <section class="page-header">
   <span class="section-label">Past Performance</span>
   <h1>Project Portfolio</h1>
-  <p>JCR Industrial Coatings has completed numerous projects across the United States for leading water utilities and municipalities.</p>
+  <p>Water tower and tank rehabilitation across Ohio, the Midwest, and surrounding states.</p>
 </section>
 
 <section class="section">
   <div class="container">
 
-    <!-- Current Project Highlight -->
-    <div class="current-project">
-      <div>
-        <span class="in-progress-badge">&#9679; In Progress — 2026</span>
-        <h2>Alma, MI — Water Treatment Plant</h2>
-        <p>JCR Industrial Coatings is currently on-site in Alma, Michigan performing a full rehabilitation of a 500,000-gallon toroellipse elevated water tower. Work includes full containment, structural repairs, abrasive blasting, exterior coating, interior NSF 61-compliant lining, and site restoration.</p>
-      </div>
-      <img src="assets/images/water-tower-blast.jpg" alt="Alma MI Water Treatment Plant — JCR Industrial Coatings in progress">
+    <!-- FEATURED PROJECT -->
+    <div style="text-align:center; margin-bottom: 2rem;">
+      <span class="section-label">Featured Project</span>
+      <h2 class="section-title">Project Profile</h2>
     </div>
 
-    <!-- Past Performance Clients -->
+    <div class="featured-project">
+      <img src="assets/images/gary-iaw-tower.jpg" alt="American Water Gary IN — 2.5 Million Gallon Elevated Tank Rehabilitation">
+      <div>
+        <h2>American Water — Gary, IN</h2>
+        <p class="fp-subtitle">2.5 Million Gallon Elevated Tank Rehabilitation</p>
+
+        <div class="ideal-structures">
+          <h4>Ideal Structures</h4>
+          <ul>
+            <li>Elevated water towers</li>
+            <li>Ground storage tanks</li>
+            <li>Wastewater treatment structures</li>
+            <li>Industrial steel tanks</li>
+          </ul>
+        </div>
+
+        <div class="geo-capacity">
+          <div>
+            <h4>Geographic Focus</h4>
+            <p>Ohio and Midwest<br>(8-hour travel radius)</p>
+          </div>
+          <div>
+            <h4>Capacity</h4>
+            <p>100,000 – 2,000,000 gallons<br>Optimal: 500,000 – 1,000,000 gal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAST PERFORMANCE AT A GLANCE -->
     <div style="text-align:center; margin-bottom: 2rem;">
       <span class="section-label">Completed Work</span>
-      <h2 class="section-title">Past Performance Clients</h2>
-      <p style="color:#6b7280; max-width:600px; margin: 0.75rem auto 0;">JCR Industrial Coatings Inc. has completed numerous projects with the following organizations.</p>
+      <h2 class="section-title">Past Performance at a Glance</h2>
     </div>
 
-    <div class="clients-grid">
+    <div class="past-perf-grid">
 
-      <div class="client-card">
-        <img src="assets/images/gary-iaw-tower.jpg" alt="American Water project — JCR Industrial Coatings">
-        <div class="client-card-body">
-          <span class="project-tag">Completed</span>
-          <h3>American Water</h3>
-          <p>Water tower and storage tank rehabilitation including abrasive blasting, structural repairs, lead abatement, and high-performance coating systems.</p>
+      <!-- Worthington Hills -->
+      <div class="pp-card">
+        <img src="assets/images/ground-storage-tank.jpg" alt="Worthington Hills Tank Columbus OH — Aqua Water">
+        <div class="pp-card-body">
+          <span class="completed-badge">Completed</span>
+          <h3>Worthington Hills Tank<br>Columbus, OH (AQUA Water)</h3>
+          <p class="pp-subtitle">300k Gal. Ground Storage Tank</p>
+          <ul>
+            <li>Full mobilization, rigging, and engineered containment</li>
+            <li>Structural steel repairs</li>
+            <li>Interior abrasive blasting, priming, and coating system installation</li>
+            <li>Exterior surface preparation and protective coating application</li>
+            <li>Sikaflex joint sealing and holiday testing</li>
+            <li>Final touch-up, tank disinfection, and site restoration</li>
+          </ul>
         </div>
       </div>
 
-      <div class="client-card">
-        <img src="assets/images/ground-storage-tank.jpg" alt="Aqua Water project — JCR Industrial Coatings">
-        <div class="client-card-body">
-          <span class="project-tag">Completed</span>
-          <h3>Aqua Water</h3>
-          <p>Full-scope coating and rehabilitation services for water storage infrastructure, including surface preparation, containment, and protective coating application.</p>
+      <!-- Ashland Tank -->
+      <div class="pp-card">
+        <img src="assets/images/water-tower-blast.jpg" alt="Ashland Tank 500k Gal Fluted Column — City of Ashland OH">
+        <div class="pp-card-body">
+          <span class="completed-badge">Completed</span>
+          <h3>Ashland Tank<br>City of Ashland, OH</h3>
+          <p class="pp-subtitle">500k Gal. Fluted Column</p>
+          <ul>
+            <li>Full mobilization, rigging, containment</li>
+            <li>Structural steel repairs and welding</li>
+            <li>Exterior abrasive blasting, priming, and coating system installation</li>
+            <li>Interior wet abrasive blasting and lining application</li>
+            <li>Dry interior surface preparation and coating</li>
+            <li>Sikaflex joint sealing and holiday testing</li>
+            <li>Roof coating, touch-up, and final disinfection</li>
+          </ul>
         </div>
       </div>
 
-      <div class="client-card">
-        <img src="assets/images/interior-tank-lining.jpg" alt="Birmingham Water Works project — JCR Industrial Coatings">
-        <div class="client-card-body">
-          <span class="project-tag">Completed</span>
-          <h3>Birmingham Water Works</h3>
-          <p>Interior and exterior tank rehabilitation with NSF/ANSI 61 certified lining systems, confined space entry protocols, and full QA/QC documentation.</p>
-        </div>
-      </div>
-
-      <div class="client-card">
-        <img src="assets/images/water-tower-blast.jpg" alt="Del-Co Water project — JCR Industrial Coatings">
-        <div class="client-card-body">
-          <span class="project-tag">Completed</span>
-          <h3>Del-Co Water</h3>
-          <p>Water tower restoration services including structural steel repairs, lead abatement, abrasive blasting, and application of high-performance epoxy and urethane coating systems.</p>
+      <!-- Wright Patterson AFB -->
+      <div class="pp-card">
+        <img src="assets/images/interior-tank-lining.jpg" alt="Wright Patterson AFB American Water 200k Gal Spheroid Tank Fairborn OH">
+        <div class="pp-card-body">
+          <span class="completed-badge">Completed</span>
+          <h3>Wright Patterson AFB (American Water)</h3>
+          <p class="pp-subtitle">200k Gal. Spheroid Tank — Fairborn, OH</p>
+          <ul>
+            <li>Full mobilization, rigging, and containment</li>
+            <li>Structural steel repair and joint sealing</li>
+            <li>Complete exterior surface preparation and coating system installation</li>
+            <li>Interior dry and wet abrasive blasting and lining application</li>
+            <li>Roof coating, inspection, and final disinfection</li>
+          </ul>
         </div>
       </div>
 
